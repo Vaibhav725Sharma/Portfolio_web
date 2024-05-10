@@ -1,0 +1,38 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: #0c0c1d;
+  color: lightgray;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

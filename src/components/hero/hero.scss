@@ -1,0 +1,91 @@
+@import "../../app.scss";
+.hero {
+  height: calc(100vh - 100px); /* Set the height of the hero section */
+  overflow: hidden; /* Hide any overflow content */
+  background: linear-gradient(
+    180deg,
+    #0c0c1d,
+    #111132
+  ); /* Set background gradient */
+  position: relative; /* Set position relative to contain absolute positioned children */
+
+  .wrapper {
+    max-width: 1366px; /* Set the maximum width of the wrapper */
+    height: 100%; /* Set the height to fill the hero section */
+    margin: auto; /* Center the wrapper horizontally */
+    .scrollPng {
+      width: 50px;
+      height: auto;
+    }
+  }
+
+  .textContainer {
+    width: 86%;
+    height: 100%; /* Set the height to fill the text container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    gap: 40px; /* Set the gap between child elements */
+
+    @include mobile {
+      height: 50%;
+      width: 100%;
+    }
+    h2 {
+      font-size: 30px;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+    }
+    h1 {
+      font-size: 66px;
+      @include mobile {
+        font-size: 36px;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .buttons {
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 300;
+      }
+    }
+  }
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    top: 250px;
+    white-space: nowrap;
+    color: #ffffff11;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .imageContainer {
+    position: absolute; /* Position absolutely relative to the hero section */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    width: 40%; /* Set the width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 0 auto; /* Center the container horizontally */
+    @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+
+    img {
+      width: 100%; /* Make the image fill the container width */
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
