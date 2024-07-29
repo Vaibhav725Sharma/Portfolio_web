@@ -104,9 +104,13 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 0 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="text" required placeholder="Email" name="email" />{" "}
-          {/* Changed placeholder from "Name" to "Email" */}
+          <input type="text" required placeholder="Name" name="from_name" />
+          <input
+            type="text"
+            required
+            placeholder="Email"
+            name="reply_to"
+          />{" "}
           <textarea
             id=""
             cols="30"
