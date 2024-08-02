@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact"];
 
   const handleClick = (item, e) => {
     e.preventDefault(); // Prevent default anchor behavior
