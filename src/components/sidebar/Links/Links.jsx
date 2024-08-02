@@ -27,23 +27,29 @@ const itemVariants = {
 
 const Links = () => {
   const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+
+  const handleClick = (item, e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    const element = document.getElementById(item);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.div className="links" variants={variants}>
-      {items.map(
-        (
-          item // Changed items to item for clarity
-        ) => (
-          <motion.a
-            href={`#${item}`}
-            key={item}
-            variants={itemVariants}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {item}
-          </motion.a>
-        )
-      )}
+      {items.map((item) => (
+        <motion.a
+          href={`#${item}`}
+          key={item}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={(e) => handleClick(item, e)}
+        >
+          {item}
+        </motion.a>
+      ))}
     </motion.div>
   );
 };

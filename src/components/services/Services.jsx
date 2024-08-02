@@ -83,13 +83,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="People" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Bringing</motion.b>{" "}
+            Clarity
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business.
+            <motion.b whileHover={{ color: "orange" }}>to Complex</motion.b>{" "}
+            Data.
           </h1>
           <button>What do I know?</button>
         </div>
@@ -119,10 +120,10 @@ const Services = () => {
           className="box"
           whileHover={{ background: "Lightgray", color: "black" }}
         >
-          <h2>AWS</h2>
+          <h2>Docker</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/aws.png" // Update with actual path
+              src="public\Docker.png" // Update with actual path
               alt="AWS Logo"
               variants={imageVariants}
               initial="initial"
