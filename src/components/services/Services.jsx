@@ -19,6 +19,27 @@ const variants = {
   },
 };
 
+const imageVariants = {
+  initial: {
+    scale: 1,
+    rotate: 0,
+    opacity: 0.7,
+  },
+  hover: {
+    scale: 1.1,
+    rotate: 10,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      type: "spring",
+      stiffness: 300,
+    },
+  },
+  whileTap: {
+    scale: 0.95,
+  },
+};
+
 const Services = () => {
   const ref = useRef();
   const [inView, setInView] = useState(false);
@@ -52,15 +73,15 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow <br />
-          and move forward
+          Data Scientist <br />
+          Turning data into insights.
         </p>
         <hr />
       </motion.div>
 
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          <img src="/people.webp" alt="People" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
@@ -70,26 +91,124 @@ const Services = () => {
             <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
             Business.
           </h1>
-          <button>What I did?</button>
+          <button>What do I know?</button>
         </div>
       </motion.div>
+
       <motion.div className="listContainer" variants={variants}>
-        {[...Array(4)].map((_, index) => (
-          <motion.div
-            className="box"
-            key={index}
-            whileHover={{ background: "Lightgray", color: "black" }}
-          >
-            <h2>Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              vel fuga velit, dolorum qui voluptates asperiores porro,
-              necessitatibus ad, est possimus sapiente repellat veniam magni
-              soluta temporibus ipsa quod a!
-            </p>
-            <button>Go!</button>
-          </motion.div>
-        ))}
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>Python</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/python.png" // Path relative to public directory
+              alt="Python Logo"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
+
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>AWS</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/aws.png" // Update with actual path
+              alt="AWS Logo"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
+
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>AWS</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/aws.png" // Update with actual path
+              alt="AWS Logo"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
+
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>Tensorflow</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/tensorflow.png" // Update with actual path
+              alt="Tensorflow Logo"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
+
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>SQL</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/sql.png" // Update with actual path
+              alt="SQL Logo"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
+
+        <motion.div
+          className="box"
+          whileHover={{ background: "Lightgray", color: "black" }}
+        >
+          <h2>Power Bi</h2>
+          <div style={{ width: "100%", height: "100%" }}>
+            <motion.img
+              src="/PowerBi.png" // Update with actual path
+              alt="Power Bi"
+              variants={imageVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap="whileTap"
+              style={{ width: "112px", height: "112px", display: "block" }}
+            />
+          </div>
+          <button>Go!</button>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
