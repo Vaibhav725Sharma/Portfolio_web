@@ -14,10 +14,22 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  .social {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   h1 {
     font-size: 100px;
     line-height: 88px;
   }
+
   span {
     font-weight: 300;
   }
@@ -25,17 +37,20 @@
   .formContainer {
     flex: 1;
     position: relative;
+
     .phoneSvg {
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: -1;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
+
     input,
     textarea {
       padding: 20px;
@@ -44,6 +59,7 @@
       color: white;
       border-radius: 5px;
     }
+
     button {
       padding: 20px;
       border: none;

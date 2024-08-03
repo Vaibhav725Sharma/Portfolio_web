@@ -104,7 +104,7 @@ const Services = () => {
           <h2>Python</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/python.png" // Path relative to public directory
+              src="/python.png"
               alt="Python Logo"
               variants={imageVariants}
               initial="initial"
@@ -123,7 +123,7 @@ const Services = () => {
           <h2>Docker</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="public\Docker.png"
+              src="/Docker.png"
               alt="Docker Logo"
               variants={imageVariants}
               initial="initial"
@@ -142,7 +142,7 @@ const Services = () => {
           <h2>AWS</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/aws.png" // Update with actual path
+              src="/aws.png"
               alt="AWS Logo"
               variants={imageVariants}
               initial="initial"
@@ -161,7 +161,7 @@ const Services = () => {
           <h2>Tensorflow</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/tensorflow.png" // Update with actual path
+              src="/tensorflow.png"
               alt="Tensorflow Logo"
               variants={imageVariants}
               initial="initial"
@@ -180,7 +180,7 @@ const Services = () => {
           <h2>SQL</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/sql.png" // Update with actual path
+              src="/sql.png"
               alt="SQL Logo"
               variants={imageVariants}
               initial="initial"
@@ -199,7 +199,7 @@ const Services = () => {
           <h2>Power Bi</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="/PowerBi.png" // Update with actual path
+              src="/PowerBi.png"
               alt="Power Bi"
               variants={imageVariants}
               initial="initial"

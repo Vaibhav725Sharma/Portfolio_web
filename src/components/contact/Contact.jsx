@@ -18,6 +18,15 @@ const variants = {
   },
 };
 
+const iconVariants = {
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
 const Contact = () => {
   const formRef = useRef();
   const [error, setError] = useState(false);
@@ -51,16 +60,45 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let's work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>vaibhav.sharma7252@gmail.com</span>{" "}
+          <span>vaibhav.sharma7252@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Bareilly , Uttar-Pradesh</span>{" "}
+          <span>Bareilly , Uttar-Pradesh</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Pin</h2>
-          <span>243001</span>{" "}
-        </motion.div>
+
+        {/* Social Icons - Moved Inside textContainer */}
+        <h2>Social media</h2>
+        <div className="social">
+          <motion.a
+            href="https://youtube.com/@vaibhavsharma7159?si=hABPR8-Be2YJfT8c"
+            variants={iconVariants}
+            whileHover="hover"
+          >
+            <motion.img src="public/youtube.png" alt="youtube" />
+          </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/vsharma4038"
+            variants={iconVariants}
+            whileHover="hover"
+          >
+            <motion.img src="public/linkedin.png" alt="Linkedin" />
+          </motion.a>
+          <motion.a
+            href="https://github.com/Vaibhav725Sharma"
+            variants={iconVariants}
+            whileHover="hover"
+          >
+            <motion.img src="public/GitHub.png" alt="GitHub" />
+          </motion.a>
+          <motion.a
+            href="https://www.kaggle.com/vaibhav7252"
+            variants={iconVariants}
+            whileHover="hover"
+          >
+            <motion.img src="public/kaggle.png" alt="kaggle" />
+          </motion.a>
+        </div>
       </motion.div>
       <div className="formContainer">
         <motion.div

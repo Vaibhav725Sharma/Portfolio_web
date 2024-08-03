@@ -15,21 +15,10 @@ const Navbar = () => {
         >
           Made by Vaibhav
         </motion.span>
-        <div className="social">
-          <a href="https://youtube.com/@vaibhavsharma7159?si=hABPR8-Be2YJfT8c">
-            <img src="public\youtube.png" alt="youtube" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/vsharma4038">
-            <img src="public\linkedin.png" alt="Linkedin" />
-          </a>
-
-          <a href="https://github.com/Vaibhav725Sharma">
-            <img src="public\GitHub.png" alt="GitHub" />
-          </a>
-          <a href="https://www.kaggle.com/vaibhav7252">
-            <img src="public\kaggle.png" alt="kaggle" />
-          </a>
+        <div className="navigation">
+          <a href="#Home">Home</a>
+          <a href="#Resume">Resume</a>
+          <a href="#About">About</a>
         </div>
       </div>
     </div>
