@@ -13,7 +13,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Portfolio Website
+          Made by Vaibhav
         </motion.span>
         <div className="social">
           <a href="https://youtube.com/@vaibhavsharma7159?si=hABPR8-Be2YJfT8c">
@@ -28,7 +28,7 @@ const Navbar = () => {
             <img src="public\GitHub.png" alt="GitHub" />
           </a>
           <a href="https://www.kaggle.com/vaibhav7252">
-            <img src="public\kaggle.png" alt="youtube" />
+            <img src="public\kaggle.png" alt="kaggle" />
           </a>
         </div>
       </div>

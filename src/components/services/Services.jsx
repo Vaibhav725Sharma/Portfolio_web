@@ -123,8 +123,8 @@ const Services = () => {
           <h2>Docker</h2>
           <div style={{ width: "100%", height: "100%" }}>
             <motion.img
-              src="public\Docker.png" // Update with actual path
-              alt="AWS Logo"
+              src="public\Docker.png"
+              alt="Docker Logo"
               variants={imageVariants}
               initial="initial"
               whileHover="hover"
