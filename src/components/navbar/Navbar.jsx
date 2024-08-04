@@ -16,7 +16,7 @@ const Navbar = () => {
           Made by Vaibhav
         </motion.span>
         <div className="navigation">
-          <a href="#Home">Home</a>
+          <a href="https://portfolio-54xx.onrender.com/">Home</a>
           <a href="#Resume">Resume</a>
           <a href="#About">About</a>
         </div>

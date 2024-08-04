@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
+import "./ToggleButton.scss";
+
 const ToggleButton = ({ setOpen }) => {
   return (
-    <button onClick={() => setOpen((prev) => !prev)}>
+    <button className="toggleButton" onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          className="line1"
+          stroke="black" // Default color
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
@@ -14,19 +17,19 @@ const ToggleButton = ({ setOpen }) => {
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          className="line2"
+          stroke="black" // Default color
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
             closed: { opacity: 1 },
-            open: {
-              opacity: 0,
-            },
+            open: { opacity: 0 },
           }}
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          className="line3"
+          stroke="black" // Default color
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 16.346 L 20 16.346" },

@@ -29,7 +29,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #ff5733; /* Hover color */
+        color: orange; /* Hover color */
       }
 
       @include mobile {

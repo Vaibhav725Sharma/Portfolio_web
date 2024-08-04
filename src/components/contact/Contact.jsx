@@ -75,28 +75,28 @@ const Contact = () => {
             variants={iconVariants}
             whileHover="hover"
           >
-            <motion.img src="public/youtube.png" alt="youtube" />
+            <motion.img src="/youtube.png" alt="youtube" />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/vsharma4038"
             variants={iconVariants}
             whileHover="hover"
           >
-            <motion.img src="public/linkedin.png" alt="Linkedin" />
+            <motion.img src="/linkedin.png" alt="Linkedin" />
           </motion.a>
           <motion.a
             href="https://github.com/Vaibhav725Sharma"
             variants={iconVariants}
             whileHover="hover"
           >
-            <motion.img src="public/GitHub.png" alt="GitHub" />
+            <motion.img src="/GitHub.png" alt="GitHub" />
           </motion.a>
           <motion.a
             href="https://www.kaggle.com/vaibhav7252"
             variants={iconVariants}
             whileHover="hover"
           >
-            <motion.img src="public/kaggle.png" alt="kaggle" />
+            <motion.img src="/kaggle.png" alt="kaggle" />
           </motion.a>
         </div>
       </motion.div>

@@ -2,6 +2,16 @@ import "./services.scss";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
+const handleDownload = () => {
+  const url = "/index.pdf"; // Assuming the file is in the public directory
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "What do I know.pdf"; // Specify the desired filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 const variants = {
   initial: {
     x: -500,
@@ -92,7 +102,16 @@ const Services = () => {
             <motion.b whileHover={{ color: "orange" }}>to Complex</motion.b>{" "}
             Data.
           </h1>
-          <button>What do I know?</button>
+          <motion.button
+            whileHover={{
+              backgroundColor: "black",
+              color: "white",
+              fontSize: "26px",
+            }}
+            onClick={handleDownload}
+          >
+            What do I know?
+          </motion.button>
         </div>
       </motion.div>
 

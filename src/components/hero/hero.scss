@@ -1,18 +1,17 @@
 @import "../../app.scss";
+
 .hero {
-  height: calc(100vh - 100px); /* Set the height of the hero section */
-  overflow: hidden; /* Hide any overflow content */
-  background: linear-gradient(
-    180deg,
-    #0c0c1d,
-    #111132
-  ); /* Set background gradient */
-  position: relative; /* Set position relative to contain absolute positioned children */
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
 
   .wrapper {
-    max-width: 1366px; /* Set the maximum width of the wrapper */
-    height: 100%; /* Set the height to fill the hero section */
-    margin: auto; /* Center the wrapper horizontally */
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    z-index: 1; // Ensure the textContainer is below the image
+
     .scrollPng {
       width: 50px;
       height: auto;
@@ -21,21 +20,19 @@
 
   .textContainer {
     width: 86%;
-    height: 100%; /* Set the height to fill the text container */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: center; /* Center items vertically */
-    gap: 40px; /* Set the gap between child elements */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    z-index: 2; // Ensure textContainer is above the image
 
-    @include mobile {
-      height: 50%;
-      width: 100%;
-    }
     h2 {
       font-size: 30px;
       color: rebeccapurple;
       letter-spacing: 10px;
     }
+
     h1 {
       font-size: 66px;
       @include mobile {
@@ -45,6 +42,7 @@
         text-align: center;
       }
     }
+
     .buttons {
       button {
         padding: 20px;
@@ -58,6 +56,7 @@
       }
     }
   }
+
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
@@ -66,26 +65,93 @@
     color: #ffffff11;
     width: 50%;
     font-weight: bold;
+    z-index: 1; // Ensure the sliding text is below the image
   }
 
   .imageContainer {
-    position: absolute; /* Position absolutely relative to the hero section */
-    top: 0; /* Align to the top */
-    right: 0; /* Align to the right */
-    width: 40%; /* Set the width of the container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    margin: 0 auto; /* Center the container horizontally */
-    @include mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: auto;
+    z-index: 0; // Ensure the image is below the textContainer and slidingTextContainer
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Media queries for tablet and mobile responsiveness
+@include tablet {
+  .hero {
+    height: calc(100vh - 80px);
+
+    .textContainer {
+      width: 90%;
+      height: 60%;
+      gap: 30px;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .buttons {
+        button {
+          padding: 15px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .slidingTextContainer {
+      font-size: 40vh;
+      top: 200px;
+      width: 60%;
+    }
+
+    .imageContainer {
+      width: 50%;
+      top: 10%;
+    }
+  }
+}
+
+@include mobile {
+  .hero {
+    height: calc(100vh - 60px);
+
+    .textContainer {
       height: 50%;
+      width: 100%;
+      gap: 20px;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .buttons {
+        button {
+          padding: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .slidingTextContainer {
+      font-size: 30vh;
+      top: 150px;
+      width: 70%;
+    }
+
+    .imageContainer {
+      height: 50%;
+      z-index: 0;
       width: 100%;
       top: unset;
       bottom: 0;
-    }
-
-    img {
-      width: 100%; /* Make the image fill the container width */
-      height: 100%;
-      object-fit: cover;
     }
   }
 }
