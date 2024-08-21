@@ -16,6 +16,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
+          
           Made by Vaibhav
           
         </motion.span>
