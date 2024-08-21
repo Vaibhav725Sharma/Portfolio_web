@@ -6,8 +6,10 @@ import Sidebar from "../sidebar/Sidebar";
 const Navbar = () => {
   return (
     <div className="navbar">
+      
       <Sidebar />
       {/*Sidebar*/}
+      
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
