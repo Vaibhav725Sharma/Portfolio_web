@@ -1,7 +1,3 @@
-import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import "./ReactCommerce/ReactCommerce.scss";
-
 const ReactCommerce = ({ item }) => {
   const ref = React.useRef();
 
@@ -17,7 +13,19 @@ const ReactCommerce = ({ item }) => {
       <div className="container" ref={ref}>
         <div className="wrapper">
           <div className="imageContainer">
-            <img src={item.img} alt="" />
+            {item.video ? (
+              <iframe
+                width="100%"
+                height="300"
+                src={item.video}
+                title={item.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img src={item.img} alt={item.title} />
+            )}
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
