@@ -6,25 +6,25 @@ const items = [
   {
     id: 1,
     title: "react Commerce",
-    video: "https://www.youtube.com/watch?v=mw_aBeugSPY",
+    video: "https://www.youtube.com/embed/mw_aBeugSPY",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
   {
     id: 2,
     title: "Node Commerce",
-    video: "https://www.youtube.com/watch?v=mw_aBeugSPY",
+    video: "https://www.youtube.com/embed/mw_aBeugSPY",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
   {
     id: 3,
     title: "SwipNbuy",
-    video: "https://youtu.be/F8orzRREY9k?si=47UFkVCBgATzkCEq",
+    video: "https://www.youtube.com/embed/F8orzRREY9k",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
   {
     id: 4,
     title: "Lux swip",
-    video: "https://youtu.be/F8orzRREY9k?si=47UFkVCBgATzkCEq",
+    video: "https://www.youtube.com/embed/F8orzRREY9k",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
 ];
