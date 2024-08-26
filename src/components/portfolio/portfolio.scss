@@ -1,5 +1,6 @@
 .portfolio {
   position: relative;
+  z-index: 1; /* Base z-index for the entire portfolio section */
 
   .progress {
     position: sticky;
@@ -9,13 +10,16 @@
     text-align: center;
     color: orange;
     font-size: 36px;
+    z-index: 2; /* Ensure progress bar stays on top */
   }
 
   .progressBar {
     height: 10px;
     background-color: white;
     width: 100%;
+    z-index: 2;
   }
+
   .container {
     display: flex;
     align-items: center;
@@ -24,7 +28,9 @@
     height: 100%;
     overflow: hidden;
     height: 100vh;
+    z-index: 1; /* Ensure the container is below the progress elements */
   }
+
   .wrapper {
     max-width: 1366px;
     height: 100%;
@@ -33,27 +39,48 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
-    .imageContainer {
+    z-index: 1;
+
+    .videoContainer {
       flex: 1;
-      height: 50%;
-      img {
+      position: relative;
+      padding-bottom: 30%;
+      height: 0;
+      overflow: hidden;
+      width: 40%;
+      max-width: 40%;
+      background: #000;
+      z-index: 1;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        border: 0;
+        z-index: 1;
       }
     }
+
     .textContainer {
       flex: 1;
       display: flex;
       flex-direction: column;
       gap: 30px;
+      z-index: 1;
+
       h2 {
         font-size: 72px;
+        z-index: 1;
       }
+
       p {
         color: gray;
         font-size: 20px;
+        z-index: 1;
       }
+
       button {
         background-color: orange;
         border: none;
@@ -61,6 +88,7 @@
         padding: 10px;
         width: 200px;
         cursor: pointer;
+        z-index: 1;
       }
     }
   }
