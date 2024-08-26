@@ -30,7 +30,15 @@ const SwipNbuy = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button>
+              <a
+                href={item.repo} // Use the dynamic repo link here
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github repo
+              </a>
+            </button>
           </motion.div>
         </div>
       </div>

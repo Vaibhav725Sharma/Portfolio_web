@@ -5,7 +5,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Tourist Package Pridection",
+    title: "Tourist Package Prediction",
     video: "https://www.youtube.com/embed/mw_aBeugSPY",
     desc: (
       <>
@@ -16,18 +16,9 @@ const items = [
           reach and refine their strategies based on customer decisions.
         </p>
         <br />
-        <p>
-          <h4>Github repo</h4>
-          <a
-            href="https://lnkd.in/gAxDhVgk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>https://lnkd.in/gAxDhVgk</p>
-          </a>
-        </p>
       </>
     ),
+    repo: "https://github.com/Vaibhav725Sharma/Travel-Package-Purchase-project-", // GitHub repo link for this project
   },
   {
     id: 2,
@@ -40,6 +31,7 @@ const items = [
         ab iure, optio facilis reiciendis temporibus architecto? Fugit.
       </p>
     ),
+    repo: "https://github.com/Vaibhav725Sharma/Travel-Package-Purchase-project-", // GitHub repo link
   },
   {
     id: 3,
@@ -52,6 +44,7 @@ const items = [
         ab iure, optio facilis reiciendis temporibus architecto? Fugit.
       </p>
     ),
+    repo: "https://github.com/Vaibhav725Sharma/SwipNbuy", // GitHub repo link
   },
   {
     id: 4,
@@ -64,6 +57,7 @@ const items = [
         ab iure, optio facilis reiciendis temporibus architecto? Fugit.
       </p>
     ),
+    repo: "https://github.com/Vaibhav725Sharma/Lux-swip", // GitHub repo link
   },
 ];
 
@@ -95,7 +89,15 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <div>{item.desc}</div>
-            <button>See Demo</button>
+            <button>
+              <a
+                href={item.repo} // Dynamic repo link
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github repo
+              </a>
+            </button>
           </motion.div>
         </div>
       </div>
