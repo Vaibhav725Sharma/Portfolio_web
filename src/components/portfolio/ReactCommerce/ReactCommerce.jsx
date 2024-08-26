@@ -30,7 +30,7 @@ const NodeCommerce = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button>View more</button>
           </motion.div>
         </div>
       </div>
