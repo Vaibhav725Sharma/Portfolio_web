@@ -18,13 +18,13 @@ const items = [
   {
     id: 3,
     title: "SwipNbuy",
-    video: "https://youtu.be/mw_aBeugSPY?si=SJeKFZBEm8_1uv_J",
+    video: "https://www.youtube.com/watch?v=mw_aBeugSPY",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
   {
     id: 4,
     title: "Lux swip",
-    video: "https://youtu.be/mw_aBeugSPY?si=SJeKFZBEm8_1uv_J",
+    video: "https://www.youtube.com/watch?v=mw_aBeugSPY",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est ab iure, optio facilis reiciendis temporibus architecto? Fugit.",
   },
 ];
