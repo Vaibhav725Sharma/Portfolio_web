@@ -48,7 +48,7 @@ const items = [
   },
   {
     id: 4,
-    title: "Lux swip",
+    title: "Power Bi",
     video: "https://www.youtube.com/embed/F8orzRREY9k",
     desc: (
       <p>
@@ -57,7 +57,7 @@ const items = [
         ab iure, optio facilis reiciendis temporibus architecto? Fugit.
       </p>
     ),
-    repo: "https://github.com/Vaibhav725Sharma/Lux-swip", // GitHub repo link
+    repo: "https://github.com/Vaibhav725Sharma/POWER-BI-PROJECT/tree/main", // GitHub repo link
   },
 ];
 
