@@ -1,3 +1,4 @@
+/* Base styles for the container */
 .container {
   display: flex;
   align-items: center;
@@ -7,6 +8,7 @@
   overflow: hidden;
 }
 
+/* Base styles for the wrapper */
 .wrapper {
   max-width: 1366px;
   height: 100%;
@@ -15,18 +17,37 @@
   gap: 50px;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1200px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
+/* Base styles for image container */
 .imageContainer {
   flex: 1;
   height: 50%;
 
   .videoIframe {
-    width: 100%; // Adjust as needed, e.g., 80%, 500px, etc.
-    height: 450px; // Adjust as needed, e.g., 300px, 600px, etc.
+    width: 100%;
+    height: 450px; // Adjust height as needed
+
+    @media (max-width: 1200px) {
+      height: 340px; // Adjust for tablet screens
+    }
+
+    @media (max-width: 768px) {
+      height: 300px; // Adjust for mobile screens
+    }
   }
 }
 
+/* Base styles for text container */
 .textContainer {
   flex: 1;
   display: flex;
@@ -35,11 +56,27 @@
 
   h2 {
     font-size: 72px;
+
+    @media (max-width: 1200px) {
+      font-size: 48px; // Adjust for tablet screens
+    }
+
+    @media (max-width: 768px) {
+      font-size: 32px; // Adjust for mobile screens
+    }
   }
 
   p {
     color: gray;
     font-size: 20px;
+
+    @media (max-width: 1200px) {
+      font-size: 18px; // Adjust for tablet screens
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px; // Adjust for mobile screens
+    }
   }
 
   button {
@@ -48,6 +85,15 @@
     border-radius: 10px;
     padding: 10px;
     width: 200px;
-    cursor: pointer;
+
+    @media (max-width: 1200px) {
+      width: 180px; // Adjust for tablet screens
+      padding: 8px;
+    }
+
+    @media (max-width: 768px) {
+      width: 150px; // Adjust for mobile screens
+      padding: 6px;
+    }
   }
 }

@@ -2,6 +2,10 @@
 
 .navbar {
   height: 70px;
+  background-color: #111; // Background color for visibility (adjust as needed)
+  display: flex;
+  align-items: center;
+  position: relative; // Ensure positioning context for inner elements
 
   .wrapper {
     max-width: 1366px;
@@ -11,9 +15,20 @@
     justify-content: space-between;
     height: 100%;
 
+    // Adjust layout for mobile
     @include mobile {
-      justify-content: flex-end;
+      flex-direction: column; // Stack items vertically
       padding: 20px;
+      align-items: flex-start; // Align items to the start for mobile
+      gap: 10px; // Space between items
+    }
+
+    // Adjust layout for tablet
+    @include tablet {
+      padding: 20px; // Padding adjustment for tablets
+      flex-direction: row; // Align items in a row
+      align-items: center;
+      gap: 20px; // Space between items
     }
   }
 
@@ -32,6 +47,7 @@
         color: orange; /* Hover color */
       }
 
+      // Responsive font size for mobile
       @include mobile {
         font-size: 14px;
       }
@@ -41,8 +57,25 @@
   span {
     margin: auto;
     font-weight: bold;
+
+    // Hide span on mobile
     @include mobile {
       display: none;
+    }
+  }
+
+  // Media query for tablets
+  @include tablet {
+    .wrapper {
+      flex-direction: row; // Align items in a row for tablets
+    }
+
+    .navigation {
+      gap: 15px; // Adjust spacing for tablets
+    }
+
+    span {
+      display: block; // Show span on tablets (if needed)
     }
   }
 }

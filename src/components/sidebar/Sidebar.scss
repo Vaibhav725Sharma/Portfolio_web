@@ -19,6 +19,7 @@
 
     @include mobile {
       width: 200px;
+      display: none; // Hide the sidebar on mobile
     }
 
     .links {
@@ -62,5 +63,10 @@
       left: 10px;
       background-color: #fff;
     }
+  }
+
+  // Hide the entire sidebar on mobile
+  @include mobile {
+    display: none;
   }
 }

@@ -10,8 +10,9 @@ const Parallax = ({ type }) => {
     offset: ["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // Adjust transformations for responsiveness
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <div
@@ -37,7 +38,7 @@ const Parallax = ({ type }) => {
         }}
         className="planets"
       ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      <motion.div style={{ y: yBg }} className="stars"></motion.div>
     </div>
   );
 };

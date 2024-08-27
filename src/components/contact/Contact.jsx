@@ -71,7 +71,7 @@ const Contact = () => {
         <h2>Social media</h2>
         <div className="social">
           <motion.a
-            href="https://youtube.com/@vaibhavsharma7159?si=hABPR8-Be2YJfT8c"
+            href="https://www.youtube.com/@VaibhavSharma_7252"
             variants={iconVariants}
             whileHover="hover"
           >

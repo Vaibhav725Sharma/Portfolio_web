@@ -48,13 +48,17 @@ const items = [
   },
   {
     id: 4,
-    title: "Power Bi",
+    title: "Power BI Dashboard",
     video: "https://www.youtube.com/embed/F8orzRREY9k",
     desc: (
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem
-        officia quibusdam nisi ut dicta ipsam, illum porro autem quam esse, est
-        ab iure, optio facilis reiciendis temporibus architecto? Fugit.
+        I created a multipage Power BI dashboard for in-depth T20 World Cup
+        analysis, showcasing my skills in data modeling, cleaning, and
+        formatting across multiple tables. The dashboard features interactive
+        visualizations that highlight top teams and players, with detailed
+        insights into batting and bowling performances. This project provides a
+        powerful tool for cricket enthusiasts and analysts to make informed
+        decisions by exploring the finer details of T20 cricket.
       </p>
     ),
     repo: "https://github.com/Vaibhav725Sharma/POWER-BI-PROJECT/tree/main", // GitHub repo link
